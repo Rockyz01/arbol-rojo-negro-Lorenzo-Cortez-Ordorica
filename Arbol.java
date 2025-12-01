@@ -36,7 +36,6 @@ public class Arbol extends JFrame {
         setVisible(true);
     }
 
-    // ------------------- LÓGICA DEL ÁRBOL ---------------------
     private static class Nodo {
         int dato;
         Nodo izq, der;
@@ -95,7 +94,6 @@ public class Arbol extends JFrame {
         return nodo;
     }
 
-    // ------------------- PANEL BONITO QUE DIBUJA ---------------------
     private class PanelArbol extends JPanel {
         private final int RADIO = 28;     
         private final int VSEP = 100;    
@@ -157,3 +155,4 @@ public class Arbol extends JFrame {
         SwingUtilities.invokeLater(Arbol::new);
     }
 }
+
